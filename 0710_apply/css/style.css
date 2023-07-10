@@ -1,0 +1,16 @@
+#resume{ width:500px; margin:0 auto;}
+.title {text-align: right;}
+
+.intro {font-size: 12px;}
+
+.need 
+{border-color: red; border-width: 3px; border-radius: 8px;}
+
+ .need:focus{outline: none;}
+
+ select[name=part]{width: 172px;}
+ input[type=date]{width: 172px; font-size:20px;}
+ input[type=number]{width: 70px;}
+
+ #selfIntro
+ {width:350px; height:150px; resize:none; overflow:hidden;}

@@ -1,0 +1,13 @@
+#box1
+{border:1px solid red; height:50px; width:400px;
+ margin-bottom:50px; line-height:50px; font-size:20px; font-weight:900;}
+
+#box2
+{border:1px solid blue; height:100px; width:300px; line-height:50px;}
+
+#box1, #box2
+{text-align: center;
+ vertical-align: middle;}
+
+ /*글이 한 줄인 경우, line-height로 중앙정렬가능
+ div에서는 vertical-align이 적용이 안 됨*/
