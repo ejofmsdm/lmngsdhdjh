@@ -1,17 +1,30 @@
 #wrap
-{width: 100%; margin: 0 auto; border: 1px solid black;}
+{width: 1000px; margin: 0 auto; border: 1px solid black;}
 
 #box1
-{border:1px solid red; height:50px; width:50%;
- margin-bottom:50px; line-height:50px; font-size:20px; font-weight:900;}
+{border:1px solid red; height:50px; width:100%;}
 
 #box2
-{border:1px solid blue; height:100px; width:300px; line-height:50px;}
+{border:1px solid blue; height:100px; width:300px;}
 
-#box1, #box2
-{text-align: center;
- vertical-align: middle;}
 
  /*글이 한 줄인 경우, line-height로 중앙정렬가능
  div에서는 vertical-align이 적용이 안 됨
- 반응형 페이지를 만들 때 % 사용*/
+ 반응형 페이지를 만들 때 % 사용 ( 퍼센트는 부모를 따름)
+ id 한 번에 많이 만들 때=> #aa$*n   */
+ 
+
+.logo_box
+{width: 200px; float:left; /*정렬 -왼쪽 기준으로 정렬 시키기*/}
+
+.logo_box img/*클래스가 logo_box인 태그 밑에 있는 img 태그선택*/
+{height:50px;} /* img는 너비or높이 둘 중 하나만 설정하는게 좋음*/
+
+.menu
+{list-style-type:none;}
+
+.menuTitle
+{float:left; margin-left:80px;}
+/*태그간 여백 : margin
+float 태그를 사용하면 부모와 별도로 존재하는 태그가 되어버림
+ 부모의 높이가 아무리 변해도 자식에게 적용되지 않음 (독립) 계산복잡*/
