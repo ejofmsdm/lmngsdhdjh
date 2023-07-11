@@ -8,7 +8,90 @@
     <meta name="description" content="엘지전자 2023년도 공채 입사지원 페이지" />
     <link href="css/style.css" rel="stylesheet"/>
 </head>
-<body>
+<body> 
+    
+    <table id="spec">
+        <tr>
+            <th>무게</th>
+            <td>21.5kg</td>
+            <th>가로</th>
+            <td>1,200mm</td>
+        </tr>
+        <tr>
+            <th>세로</th>
+            <td>200mm</td>
+            <th>소비전력</th>
+            <td>2Wh/h</td>
+        </tr>
+
+    </table>
+
+    <table id="grade">
+        <tr>
+            <th>성명</th>
+            <th>수학</th>
+            <th>과학</th>
+        </tr>
+        <tr>
+            <td>김태희</td>
+            <td>95</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>한지호</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <br/>
+
+    <div id="box3">
+        <div>dfdssz dfsdf</div>   
+        <p>fpoqm kkdskzm</p>
+        <p>fpoqm kkdskzm</p>
+        <div>dfdssz dfsdf</div>   
+        <p>fpoqm kkdskzm</p>
+        <p>fpoqm kkdskzm</p>
+        <p>fpoqm kkdskzm</p>
+        <div>dfdssz dfsdf</div>   
+    </div>
+    <br/>
+
+    <div id="box1">
+        <p>동해물과 백두산이</p>    
+        <p>마르고 닳도록</p>    
+        <p>하느님이 보우하사</p>    
+        <p>우리나라 만세</p>      
+    </div>
+    <br/>
+
+    <div id="box2">
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+        <p>jklsdjfofjijfidojfoisf</p>
+    </div>
+    <br/>
+
+    <p id="p1">dfsfdfsfdsfsdf</p>
+    <p class="p2">dfsfdfzdfsfsfdsfsdf</p>
+    <p class="p3">ddfsfdfsfdfsfdsfsdf</p>
+    <br/>
+
+    <div id="parent">
+        <p>dsfsfsfs sffd</p>
+        <p>dsfsfsfs sffd</p>
+        <span>dfsdsfdsfqw qwe</span>
+        <span>dfsdsfdsfqw qwe</span>
+
+    </div>
+    
+    <!--http(브라우저): hyper text transfer protocol
+           ftp: file transfer protocol-->
+    <a href="http://naver.com">링크</a>
     <form id="apply" action="apply.php" method="get">
         <table id="resume" >
             <tr>
@@ -49,19 +132,19 @@
             <tr>
                 <td class="title">국적</td>
                 <td>
-                    <input type="radio" name="national" />내국인             
-                    <input type="radio" name="national" />외국인             
+                    <input type="radio" name="national" value="1"/>내국인             
+                    <input type="radio" name="national" value="0"/>외국인             
                 </td>
             </tr>
             <tr>
-                <td class="title intro">자기소개서<br>(300자 미만)</td>
+                <td class="title intro">자기소개서<br/>(300자 미만)</td>
                 <td>
                     <textarea id="selfIntro" ></textarea>
                 </td>
             </tr>
             <tr> 
                 <td></td>
-                <td><button>제출</button></td>
+                <td colspan="2"><button type="submit">제출</button></td>
             </tr>
         </table>
     </form>
