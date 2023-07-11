@@ -2,7 +2,22 @@
 {width: 1000px; margin: 0 auto; border: 1px solid black;}
 
 #box1
-{border:1px solid red; height:50px; width:100%;}
+{border:1px solid red; height:50px; width:100%; 
+    display:flex; justify-content: start; 
+align-items: center;}
+
+/*flex는 레이아웃 구성, 현재실무에서 태그를 배치하는 방법,
+display:flex가 적용된 태그는 부모태그(flex 컨테이너)라고 함
+flex적용된 태그의 하위태그들은 flex아이템이라 함
+
+flex는 주축과 교차축에 의해 배치가됨
+주축 기준으로 배치는 justify-content 이다.
+justify-content에는 start, center, end, space-around, space-between 이 있다.
+
+교차축 기준으로 배치는 align-items 이다.
+align-items에는 start, center, end 등 이 있다.
+*/
+
 
 #box2
 {border:1px solid blue; height:100px; width:300px;}
@@ -15,16 +30,19 @@
  
 
 .logo_box
-{width: 200px; float:left; /*정렬 -왼쪽 기준으로 정렬 시키기*/}
+{width: 200px; /*float:left; /*정렬 -왼쪽 기준으로 정렬 시키기*/}
 
 .logo_box img/*클래스가 logo_box인 태그 밑에 있는 img 태그선택*/
 {height:50px;} /* img는 너비or높이 둘 중 하나만 설정하는게 좋음*/
 
 .menu
-{list-style-type:none;}
-
+{list-style-type:none;
+display: flex;
+margin: 0;
+padding: 0;
+}
 .menuTitle
-{float:left; margin-left:80px;}
+{/*float:left; margin-left:80px;*/}
 /*태그간 여백 : margin
 float 태그를 사용하면 부모와 별도로 존재하는 태그가 되어버림
  부모의 높이가 아무리 변해도 자식에게 적용되지 않음 (독립) 계산복잡
